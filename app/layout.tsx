@@ -6,21 +6,17 @@ import type { Metadata } from "next";
 import { Acme, Raleway } from "next/font/google";
 import localFont from "next/font/local";
 
+import Footer from "@/components/footer";
+import { Header } from "@/components/header";
 import "@/styles/globals.css";
 import theme from "./theme";
 
 const displayFont = localFont({
-  src: "./fonts/Tomorrow-ThinItalic.ttf",
+  src: "../fonts/Tomorrow-ThinItalic.ttf",
   variable: "--font-display",
   weight: "100 300",
   display: "swap",
 });
-// const textFont = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-regular",
-//   weight: "400 700",
-//   display: "swap",
-// });
 
 const textFont = Raleway({
   subsets: ["latin"],
@@ -54,7 +50,9 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
+            <Header />
             {children}
+            <Footer />
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
