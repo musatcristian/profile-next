@@ -15,7 +15,7 @@ const StyledHeader = styled("header")({
 export const Header = () => {
   return (
     <StyledHeader>
-      <Typography>Cristian Musat</Typography>
+      <Typography variant="h4">Cristian Musat</Typography>
 
       <BasicTabs />
     </StyledHeader>

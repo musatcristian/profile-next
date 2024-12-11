@@ -14,6 +14,7 @@ const StyledFooter = styled("footer")({
 
 const StyledLink = styled(Link)({
   paddingRight: "100px",
+  textDecoration: "none",
 });
 
 export default function Footer() {
