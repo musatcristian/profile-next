@@ -1,12 +1,12 @@
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 
-import type { Metadata } from "next";
-import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import { CssBaseline } from "@mui/material";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
+import type { Metadata } from "next";
+import { Acme, Raleway } from "next/font/google";
 import localFont from "next/font/local";
-import { Raleway, Acme } from "next/font/google";
 
-import "./globals.css";
+import "@/styles/globals.css";
 import theme from "./theme";
 
 const displayFont = localFont({

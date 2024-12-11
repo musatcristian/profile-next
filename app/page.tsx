@@ -1,6 +1,7 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import { Typography } from "@mui/material";
+import Image from "next/image";
+
+import styles from "@/styles/app.module.css";
 
 export default function Home() {
   return (
