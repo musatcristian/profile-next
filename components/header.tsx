@@ -16,7 +16,7 @@ const StyledHeader = styled(AppBar)({
 
 export const Header = () => {
   return (
-    <StyledHeader>
+    <StyledHeader position="static">
       <Typography variant="h4">Cristian Musat</Typography>
       <BasicTabs />
     </StyledHeader>
