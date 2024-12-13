@@ -3,6 +3,7 @@
 import { styled } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
+import { useState } from "react";
 
 import { onServerNavigate } from "@/actions/navigate";
 import BasicTabs from "./tabs";
@@ -16,7 +17,14 @@ const StyledHeader = styled(AppBar)({
 });
 
 export const Header = () => {
+  const [value, setValue] = useState<string>("");
+
+  const handleTabChange = (newValue: string) => {
+    setValue(newValue);
+    onServerNavigate(newValue);
+  };
   const handleTitleClick = () => {
+    setValue("");
     onServerNavigate("/");
   };
 
@@ -29,7 +37,7 @@ export const Header = () => {
       >
         Cristian Musat
       </Typography>
-      <BasicTabs />
+      <BasicTabs onTabClick={handleTabChange} tabValue={value} />
     </StyledHeader>
   );
 };

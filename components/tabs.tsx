@@ -1,8 +1,7 @@
-import { onServerNavigate } from "@/actions/navigate";
 import { styled } from "@mui/material";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
-import { SyntheticEvent, useState } from "react";
+import { SyntheticEvent } from "react";
 
 const ZeroTab = styled(Tab)({
   width: 0,
@@ -20,19 +19,21 @@ function a11yProps(index: number) {
   };
 }
 
-export default function BasicTabs() {
-  const [value, setValue] = useState<string>("");
+interface Props {
+  tabValue: string;
+  onTabClick: (value: string) => void;
+}
 
-  const handleChange = (event: SyntheticEvent, newValue: string) => {
-    setValue(newValue);
-    onServerNavigate(newValue);
+export default function BasicTabs({ onTabClick, tabValue }: Props) {
+  const handleTabClick = (_event: SyntheticEvent, value: string) => {
+    onTabClick(value);
   };
 
   return (
     <Tabs
-      value={value}
-      onChange={handleChange}
-      aria-label="basic tabs example"
+      value={tabValue}
+      onChange={handleTabClick}
+      aria-label="top tabs navigation"
       centered
       variant="fullWidth"
       indicatorColor="primary"
