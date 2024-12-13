@@ -2,6 +2,6 @@
 
 import { redirect } from "next/navigation";
 
-export async function onNavigate(route: string) {
+export async function onServerNavigate(route: string) {
   redirect(route);
 }

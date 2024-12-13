@@ -4,6 +4,7 @@ import { styled } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
 
+import { onServerNavigate } from "@/actions/navigate";
 import BasicTabs from "./tabs";
 
 const StyledHeader = styled(AppBar)({
@@ -15,9 +16,19 @@ const StyledHeader = styled(AppBar)({
 });
 
 export const Header = () => {
+  const handleTitleClick = () => {
+    onServerNavigate("/");
+  };
+
   return (
     <StyledHeader position="static">
-      <Typography variant="h4">Cristian Musat</Typography>
+      <Typography
+        variant="h4"
+        onClick={handleTitleClick}
+        sx={{ cursor: "pointer" }}
+      >
+        Cristian Musat
+      </Typography>
       <BasicTabs />
     </StyledHeader>
   );
