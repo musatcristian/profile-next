@@ -3,6 +3,25 @@
 import createTheme from "@mui/material/styles/createTheme";
 
 const tt = createTheme({
+  palette: {
+    primary: {
+      main: "#7B80AD",
+      light: "#C8CCEE",
+      dark: "#32386E",
+      contrastText: "#EDE5C7",
+    },
+    secondary: {
+      main: "#EDE5C7",
+      light: "#C8CCEE",
+      contrastText: "#988C5F",
+      dark: "#32386E",
+    },
+    text: {
+      disabled: "#EDE5C7",
+      primary: "#32386E",
+      secondary: "#C8CCEE",
+    },
+  },
   typography: {
     h1: {
       fontFamily: "var(--font-display)",
@@ -32,7 +51,7 @@ const tt = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        "ul, li": {
+        "ul, li, button": {
           fontFamily: "var(--font-display)",
         },
         "ol > li": {

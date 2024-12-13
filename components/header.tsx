@@ -8,10 +8,12 @@ import { useState } from "react";
 import { onServerNavigate } from "@/actions/navigate";
 import BasicTabs from "./tabs";
 
+// ("179 135 50");
+
 const StyledHeader = styled(AppBar)({
   background: `linear-gradient(
-    rgba(33, 62, 107, 0.75),
-    rgba(66, 135, 245, 0.2)
+    rgba(57, 97, 157, 0.75),
+    rgba(255, 255, 255, 0.2) 70%
   )`,
   padding: "8px 15% 0",
 });

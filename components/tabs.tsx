@@ -12,6 +12,12 @@ const ZeroTab = styled(Tab)({
   margin: 0,
 });
 
+const StyledTab = styled(Tab)({
+  textTransform: "none",
+  fontSize: "1.2rem",
+  fontFamily: "var(--font-regular)",
+});
+
 function a11yProps(index: number) {
   return {
     id: `simple-tab-${index}`,
@@ -39,9 +45,9 @@ export default function BasicTabs({ onTabClick, tabValue }: Props) {
       indicatorColor="primary"
       textColor="secondary"
     >
-      <Tab label="Programmer" value="/landing" {...a11yProps(0)} />
-      <Tab label="Teamster" value="/team" {...a11yProps(1)} />
-      <Tab label="Problem Solver" value="/solution" {...a11yProps(2)} />
+      <StyledTab label="Programmer" value="/landing" {...a11yProps(0)} />
+      <StyledTab label="Teamster" value="/team" {...a11yProps(1)} />
+      <StyledTab label="Problem Solver" value="/solution" {...a11yProps(2)} />
       <ZeroTab hidden value={""} />
     </Tabs>
   );

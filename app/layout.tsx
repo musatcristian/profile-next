@@ -9,7 +9,7 @@ import localFont from "next/font/local";
 import Footer from "@/components/footer";
 import { Header } from "@/components/header";
 import "@/styles/globals.css";
-import theme from "./theme";
+import theme from "@/styles/theme";
 
 const displayFont = localFont({
   src: "../fonts/Tomorrow-ThinItalic.ttf",
