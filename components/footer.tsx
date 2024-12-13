@@ -1,6 +1,6 @@
 "use client";
 
-import { Paper, styled } from "@mui/material";
+import { styled } from "@mui/material";
 import Link from "@mui/material/Link";
 
 const StyledFooter = styled("footer")({
@@ -14,13 +14,6 @@ const StyledFooter = styled("footer")({
   left: 0,
   right: 0,
   zIndex: 1000,
-});
-
-const Ss = styled(Paper)({
-  position: "fixed",
-  bottom: 0,
-  left: 0,
-  right: 0,
 });
 
 const StyledLink = styled(Link)({
