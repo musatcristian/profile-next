@@ -1,7 +1,6 @@
 "use client";
 
-import { styled } from "@mui/material";
-import Box from "@mui/material/Box";
+import { Paper, styled } from "@mui/material";
 import Link from "@mui/material/Link";
 
 const StyledFooter = styled("footer")({
@@ -10,6 +9,18 @@ const StyledFooter = styled("footer")({
     rgba(33, 62, 107)
   )`,
   padding: "16px 48px",
+  position: "fixed",
+  bottom: 0,
+  left: 0,
+  right: 0,
+  zIndex: 1000,
+});
+
+const Ss = styled(Paper)({
+  position: "fixed",
+  bottom: 0,
+  left: 0,
+  right: 0,
 });
 
 const StyledLink = styled(Link)({
@@ -17,18 +28,21 @@ const StyledLink = styled(Link)({
   textDecoration: "none",
 });
 
+const hhh = "https://github.com/";
+const lll = "https://linkedin.com/";
+
 export default function Footer() {
   return (
     <StyledFooter>
-      <Box
-        sx={{
-          display: "flex",
-        }}
-      >
-        <StyledLink>Resume</StyledLink>
-        <StyledLink>Github</StyledLink>
-        <StyledLink>LinkedIn</StyledLink>
-      </Box>
+      <StyledLink href="#" target="_blank" rel="noopener noreferrer">
+        Resume
+      </StyledLink>
+      <StyledLink href={hhh} target="_blank" rel="noopener noreferrer">
+        Github
+      </StyledLink>
+      <StyledLink href={lll} target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </StyledLink>
     </StyledFooter>
   );
 }

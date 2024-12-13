@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import styles from "@/styles/app.module.css";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
