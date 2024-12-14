@@ -21,10 +21,11 @@ const StyledFooter = styled("footer")({
   zIndex: 1000,
 });
 
-const StyledLink = styled(Link)({
+const StyledLink = styled(Link)(({ theme }) => ({
   paddingRight: "100px",
   textDecoration: "none",
-});
+  color: theme.palette.primary.light,
+}));
 
 const hhh = "https://github.com/";
 const lll = "https://linkedin.com/";
