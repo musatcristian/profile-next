@@ -51,6 +51,14 @@ const tt = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
+        main: {
+          display: "flex",
+          flex: 1,
+          flexDirection: "column",
+          gap: "32px",
+          gridRowStart: 2,
+        },
+        "footer > a": {},
         "ul, li, button": {
           fontFamily: "var(--font-display)",
         },

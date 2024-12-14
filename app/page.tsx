@@ -5,8 +5,8 @@ import styles from "@/styles/app.module.css";
 
 export default async function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <main className={styles.main}>
+      <div className={styles.page}>
         <header style={{ display: "flex" }}>
           <Image
             className={styles.logo}
@@ -22,7 +22,7 @@ export default async function Home() {
             <Typography variant="body2">This is a subtitle</Typography>
           </div>
         </header>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }

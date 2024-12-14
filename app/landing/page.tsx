@@ -1,3 +1,3 @@
 export default async function Landing() {
-  return <div>landing Page</div>;
+  return <main>landing Page</main>;
 }
