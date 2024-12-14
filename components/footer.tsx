@@ -27,8 +27,8 @@ const lll = "https://linkedin.com/";
 export default function Footer() {
   return (
     <StyledFooter>
-      <StyledLink href="#" target="_blank" rel="noopener noreferrer">
-        Resume
+      <StyledLink href="/resume" target="_blank" rel="noopener noreferrer">
+        Resumee
       </StyledLink>
       <StyledLink href={hhh} target="_blank" rel="noopener noreferrer">
         Github
