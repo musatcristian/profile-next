@@ -43,20 +43,20 @@ export default async function Home() {
         }}
       >
         <p>
-          Hi, I'm Cristian Musat and I am your friendly neighborhood web
-          developer. I've always been fascinated with how the web connects
-          billions of people, so, I've decided to learn how it works.
+          Hi, I&apos;m Cristian Musat and I am your friendly neighborhood web
+          developer. I&apos;ve always been fascinated with how the web connects
+          billions of people, so, I&apos;ve decided to learn how it works.
         </p>
         <p>
-          Along the years I've worked on many different projects using many
+          Along the years I&apos;ve worked on many different projects using many
           differnt technologies and techniques. Out of all of those I decided,
           for a few years now, to specialize in
           <code>typecript</code>, <code>react</code> and <code>next</code>.
         </p>
         <p>
-          If you wanna find out more and the clever puns above didn't scare you
-          off, use the navogation in the header to get more details or use the
-          footer links to <Link> download my resumee </Link> and{" "}
+          If you wanna find out more and the clever puns above didn&apos;t scare
+          you off, use the navogation in the header to get more details or use
+          the footer links to <Link> download my resumee </Link> and{" "}
           <Link>to check out my github projects</Link>.
         </p>
       </article>
