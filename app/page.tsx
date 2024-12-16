@@ -10,7 +10,6 @@ export default async function Home() {
       <div style={{ textAlign: "center", paddingTop: "2rem" }}>
         <Typography variant="h4">Turning bugs into features</Typography>
         <Typography variant="h4">Since 2018</Typography>
-        {/* (<code>ok, its not that long ago but still</code>) */}
       </div>
       <div
         style={{
@@ -37,27 +36,66 @@ export default async function Home() {
           textAlign: "center",
           maxWidth: "90%",
           minWidth: "90%",
-          // backgroundColor: "red",
-          padding: "16px",
+          padding: "16px 48px",
           fontSize: "20px",
         }}
       >
-        <p>
-          Hi, I&apos;m Cristian Musat and I am your friendly neighborhood web
-          developer. I&apos;ve always been fascinated with how the web connects
-          billions of people, so, I&apos;ve decided to learn how it works.
+        <p
+          style={{
+            textIndent: "2em",
+            lineHeight: "20px",
+          }}
+        >
+          <code
+            style={{
+              fontSize: "50px",
+              fontWeight: "bolder",
+              fontFamily: "var(--font-display)",
+            }}
+          >
+            Hi
+          </code>
+          , my name is Cristian Musat and I am your friendly neighborhood web
+          developer.
+        </p>
+        <p style={{ paddingBottom: "16px" }}>
+          I&apos;ve always been fascinated with how the web connects billions of
+          people, so I decided to learn how it works.
         </p>
         <p>
-          Along the years I&apos;ve worked on many different projects using many
-          differnt technologies and techniques. Out of all of those I decided,
-          for a few years now, to specialize in
-          <code>typecript</code>, <code>react</code> and <code>next</code>.
+          Over the years, I&apos;ve worked on many different projects using a
+          variety of technologies and techniques. Out of all of those, I
+          decided, for a few years now, to specialize in
+        </p>
+        <p style={{ paddingBottom: "16px" }}>
+          <code>TypeScript</code>, <code>React</code> and <code>Next</code>.
         </p>
         <p>
-          If you wanna find out more and the clever puns above didn&apos;t scare
-          you off, use the navogation in the header to get more details or use
-          the footer links to <Link> download my resumee </Link> and{" "}
-          <Link>to check out my github projects</Link>.
+          If you wanna find out more (and the clever puns above didn&apos;t
+          scare you off), use the navigation in the header to explore further or
+          check out the footer links to
+        </p>
+        <p>
+          <Link
+            sx={{
+              color: "var(--secondary)",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+          >
+            download my resumee
+          </Link>
+          &nbsp; and &nbsp;
+          <Link
+            sx={{
+              color: "var(--secondary)",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+          >
+            to check out my github projects
+          </Link>
+          .
         </p>
       </article>
     </main>

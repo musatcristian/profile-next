@@ -25,6 +25,10 @@ const StyledLink = styled(Link)(({ theme }) => ({
   paddingRight: "100px",
   textDecoration: "none",
   color: theme.palette.primary.light,
+  fontSize: "16px",
+  "&:last-of-type": {
+    paddingRight: 0,
+  },
 }));
 
 const hhh = "https://github.com/";
