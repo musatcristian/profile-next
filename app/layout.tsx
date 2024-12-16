@@ -51,7 +51,9 @@ export default async function RootLayout({
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <Header />
+
             {children}
+
             <Footer />
           </ThemeProvider>
         </AppRouterCacheProvider>

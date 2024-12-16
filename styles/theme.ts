@@ -23,6 +23,9 @@ const tt = createTheme({
     },
   },
   typography: {
+    allVariants: {
+      color: "#EDE5C7",
+    },
     h1: {
       fontFamily: "var(--font-display)",
     },
@@ -55,8 +58,13 @@ const tt = createTheme({
           display: "flex",
           flex: 1,
           flexDirection: "column",
-          gap: "32px",
+          gap: "16px",
           gridRowStart: 2,
+          minWidth: "75%",
+          alignItems: "center",
+
+          margin: "1% 15%",
+          borderRadius: "16px",
         },
         "footer > a": {},
         "ul, li, button": {
