@@ -11,6 +11,7 @@ import { Header } from "@/components/header";
 import { VerticalSlide } from "@/components/slide";
 import "@/styles/globals.css";
 import theme from "@/styles/theme";
+import { Suspense } from "react";
 
 const displayFont = localFont({
   src: "../fonts/Tomorrow-ThinItalic.ttf",
@@ -52,7 +53,9 @@ export default async function RootLayout({
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <Header />
-            <VerticalSlide />
+            <Suspense>
+              <VerticalSlide />
+            </Suspense>
             {children}
             <Footer />
           </ThemeProvider>
