@@ -2,6 +2,7 @@
 
 import { styled } from "@mui/material";
 import Link from "@mui/material/Link";
+import { FC } from "react";
 
 const StyledFooter = styled("footer")({
   background: `linear-gradient(
@@ -34,7 +35,7 @@ const StyledLink = styled(Link)(({ theme }) => ({
 const hhh = "https://github.com/";
 const lll = "https://linkedin.com/";
 
-export default function Footer() {
+export const Footer: FC = () => {
   return (
     <StyledFooter>
       <StyledLink href="/resume" target="_blank" rel="noopener noreferrer">
@@ -48,4 +49,4 @@ export default function Footer() {
       </StyledLink>
     </StyledFooter>
   );
-}
+};

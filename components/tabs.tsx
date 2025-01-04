@@ -45,7 +45,7 @@ export default function BasicTabs({ onTabClick, tabValue }: Props) {
       indicatorColor="primary"
       textColor="secondary"
     >
-      <StyledTab label="Programmer" value="/landing" {...a11yProps(0)} />
+      <StyledTab label="Programmer" value="/programming" {...a11yProps(0)} />
       <StyledTab label="Teamster" value="/team" {...a11yProps(1)} />
       <StyledTab label="Problem Solver" value="/solution" {...a11yProps(2)} />
       <ZeroTab hidden value={""} />

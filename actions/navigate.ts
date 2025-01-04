@@ -1,7 +1,7 @@
 "use server";
 
-import { redirect } from "next/navigation";
+import { permanentRedirect, RedirectType } from "next/navigation";
 
 export async function onServerNavigate(route: string) {
-  redirect(route);
+  permanentRedirect(route, RedirectType.push);
 }

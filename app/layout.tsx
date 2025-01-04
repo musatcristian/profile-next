@@ -6,8 +6,9 @@ import type { Metadata } from "next";
 import { Acme, Advent_Pro } from "next/font/google";
 import localFont from "next/font/local";
 
-import Footer from "@/components/footer";
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { VerticalSlide } from "@/components/slide";
 import "@/styles/globals.css";
 import theme from "@/styles/theme";
 
@@ -51,9 +52,8 @@ export default async function RootLayout({
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <Header />
-
+            <VerticalSlide />
             {children}
-
             <Footer />
           </ThemeProvider>
         </AppRouterCacheProvider>

@@ -1,12 +1,10 @@
-import styles from "@/styles/app.module.css";
+"use server";
+
 import { Link, Typography } from "@mui/material";
 
 export default async function Home() {
   return (
-    <main
-      className={styles.main}
-      style={{ backgroundColor: "rgba(57, 97, 157, 0.5)" }}
-    >
+    <main style={{ backgroundColor: "rgba(57, 97, 157, 0.5)" }}>
       <div style={{ textAlign: "center", paddingTop: "2rem" }}>
         <Typography variant="h4">Turning bugs into features</Typography>
         <Typography variant="h4">Since 2018</Typography>
@@ -28,7 +26,6 @@ export default async function Home() {
           <p>MDN</p>
           <p>Stack Overflow</p>
           <p>Too much coffee</p>
-          {/* MDNStackoverflow and too much coffee. */}
         </div>
       </div>
       <article
@@ -82,6 +79,8 @@ export default async function Home() {
               textDecoration: "underline",
               cursor: "pointer",
             }}
+            target="_blank"
+            href="/resume"
           >
             download my resumee
           </Link>
@@ -92,6 +91,9 @@ export default async function Home() {
               textDecoration: "underline",
               cursor: "pointer",
             }}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/"
           >
             to check out my github projects
           </Link>
