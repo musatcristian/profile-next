@@ -9,21 +9,21 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
-    "@emotion/cache": "^11",
-    "@emotion/styled": "^11",
-    "@mui/icons-material": "^6",
-    "@mui/material": "^6",
-    "@mui/material-nextjs": "^6",
-    "next": "^15.0.5",
-    "react": "^19.2",
-    "react-dom": "^19.2"
+    "@emotion/cache": "*",
+    "@emotion/styled": "*",
+    "@mui/icons-material": "*",
+    "@mui/material": "*",
+    "@mui/material-nextjs": "*",
+    "next": "*",
+    "react": "*",
+    "react-dom": "*"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19.2",
-    "@types/react-dom": "^19.2",
-    "eslint": "^8",
-    "eslint-config-next": "15",
-    "typescript": "^5"
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "eslint": "*",
+    "eslint-config-next": "*",
+    "typescript": "*"
   }
 }

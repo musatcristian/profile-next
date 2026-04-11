@@ -1,7 +1,7 @@
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
 
 import { CssBaseline } from "@mui/material";
-import ThemeProvider from "@mui/material/styles/ThemeProvider";
+import { ThemeProvider } from "@mui/material/styles";
 import type { Metadata } from "next";
 import { Acme, Advent_Pro } from "next/font/google";
 import localFont from "next/font/local";
