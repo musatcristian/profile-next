@@ -8,22 +8,22 @@
     "start": "next start",
     "lint": "next lint --fix"
   },
-  "dependencies": {
-    "@emotion/cache": "*",
-    "@emotion/styled": "*",
-    "@mui/icons-material": "*",
-    "@mui/material": "*",
-    "@mui/material-nextjs": "*",
-    "next": "*",
-    "react": "*",
-    "react-dom": "*"
+   "dependencies": {
+    "@emotion/cache": "11.14.0",
+    "@emotion/styled": "11.14.0",
+    "@mui/icons-material": "9.0.0",
+    "@mui/material": "9.0.0",
+    "@mui/material-nextjs": "9.0.0",
+    "next": "16.2.3",
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
   },
   "devDependencies": {
-    "@types/node": "*",
-    "@types/react": "*",
-    "@types/react-dom": "*",
-    "eslint": "*",
-    "eslint-config-next": "*",
-    "typescript": "*"
+    "@types/node": "25.6.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "10.2.0",
+    "eslint-config-next": "16.2.3",
+    "typescript": "6.0.2"
   }
 }
