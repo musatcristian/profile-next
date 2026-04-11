@@ -32,8 +32,8 @@ const StyledLink = styled(Link)(({ theme }) => ({
   },
 }));
 
-const hhh = "https://github.com/";
-const lll = "https://linkedin.com/";
+const github_repos = "https://github.com/musatcristian?tab=repositories";
+const linkedin_profile = "https://www.linkedin.com/in/cristianmusat/";
 
 export const Footer: FC = () => {
   return (
@@ -41,10 +41,10 @@ export const Footer: FC = () => {
       <StyledLink href="/resume" target="_blank" rel="noopener noreferrer">
         Resumee
       </StyledLink>
-      <StyledLink href={hhh} target="_blank" rel="noopener noreferrer">
+      <StyledLink href={github_repos} target="_blank" rel="noopener noreferrer">
         Github
       </StyledLink>
-      <StyledLink href={lll} target="_blank" rel="noopener noreferrer">
+      <StyledLink href={linkedin_profile} target="_blank" rel="noopener noreferrer">
         LinkedIn
       </StyledLink>
     </StyledFooter>
